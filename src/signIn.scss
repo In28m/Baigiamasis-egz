@@ -1,7 +1,7 @@
 .container {
     background-color: rgba(131, 129, 129, 0.418);
     width: 25%;
-    height: 50vh;
+    height: 40vh;
     margin: auto;
     border-radius: 20px;
     display: flex;
@@ -23,8 +23,13 @@
     margin: 15px;
     margin-bottom: 10px;
     border: none;
-    outline: none;
-    border-radius: 8px; box-shadow: 0px 0px 10px 2px #2ebf91;
+    outline-color: #2ebf91;
+    border-radius: 8px; box-shadow: 0px 0px 10px 2px #2ebf91;       
+}
+
+input::placeholder {
+    color: white;
+    text-align: center;
 }
 
 .container button {
@@ -49,10 +54,23 @@
     cursor: pointer;
 }
 
-.container .back-btn:hover {
-    color: #2ebf91;
+.sign-in-modal {
+    width: 80%;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;   
 }
-
+  
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+  
 /*kitų ekranų prisitaikymas*/
 @media only screen and (max-width: 678px) {
     .container {
@@ -71,18 +89,15 @@
     }
 
     .container button {
-        width: 35%;
+        width: 20%;
     }
 
-    .container .back-btn {
-        margin-bottom: 20px;
-    }
 }
 @media only screen and (min-width: 679px) and (max-width: 1024px) {
     .container {
-        width: 60%; 
-        height: auto;
-        padding: 30px;
+        width: 50%;
+        height: 50%;
+        padding: 50px;
     }
 
     .container h2 {
@@ -97,8 +112,5 @@
     .container button {
         width: 15%;
     }
-
-    .container .back-btn {
-        margin-bottom: 15px;
-    }
+   
 }
