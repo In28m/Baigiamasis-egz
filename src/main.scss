@@ -1,0 +1,87 @@
+ @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(public/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Grape Nuts', cursive;
+}
+
+.navBar {
+    padding: 20px;
+}
+
+.travelLogo {
+   color: white;
+   margin-top: 15px;
+   font-size: 35px;
+}
+
+nav {
+    text-align: center;
+}
+  
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-left: 15px;
+    font-size: 20px; 
+    position: relative;
+}
+
+nav a:hover {
+    color: #a8ff78;  
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91, #ffd452);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.btn {
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #2ebf91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button .react-icons {
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #ffd452;
+    color: black;  
+}
+
+

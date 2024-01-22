@@ -1,0 +1,54 @@
+.container {
+    background-color: rgba(131, 129, 129, 0.418);
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 2px #2ebf91;
+
+}
+
+.container h2 {
+    margin-bottom: 30px;
+}
+
+.container input {
+    background-color: rgba(131, 129, 129, 0.144);
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px; box-shadow: 0px 0px 10px 2px #2ebf91;
+}
+
+.container button {
+    background-color: #2ebf91;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.container button:hover {
+    background-color: #ffd452;
+    color: black;  
+}
+.container .back-btn {
+    align-self: flex-start;
+    font-size: 24px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.container .back-btn:hover {
+    color: #2ebf91;
+}
