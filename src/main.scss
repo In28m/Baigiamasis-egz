@@ -59,10 +59,11 @@ nav a:hover::after {
     margin-top: 380px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;   
 }
 
-button {
+button,
+.get {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 18px;
@@ -73,15 +74,21 @@ button {
     cursor: pointer;
     display: flex;
     align-items: center;
+    font-family: sans-serif;
 }
 
-button .react-icons {
+.get .react-icons {
     margin-left: 10px;
 }
 
-button:hover {
+button:hover,
+.get:hover {
     background-color: #ffd452;
     color: black;  
+}
+
+.get {
+    text-decoration: none;
 }
 /* mob. prisitaikymas */
 @media only screen and (max-width: 678px) {

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './main.scss';
 import './signIn.scss';
 import NavBar from './Components/NavBar';
 import SignIn from './Components/SignIn';
+import GetStart from './Components/GetStart';
 
 function App() {
   const [isSignInOpen, setIsSignInOpen] = useState(false);
@@ -16,12 +18,20 @@ function App() {
   }
 
   return (
-    <>
-      <NavBar onSignInClick={handleSignInClick} />
-      {isSignInOpen && <SignIn onClose={handleSignInClose} />}
-    </>
+    <Router>
+      <>
+        <NavBar onSignInClick={handleSignInClick} />
+        {isSignInOpen && <SignIn onClose={handleSignInClose} />}
+
+        <Routes>
+          <Route path="/get-start" element={<GetStart />} />
+        </Routes>
+      </>
+    </Router>
   )
 }
 
-export default App
+export default App;
+
+
 

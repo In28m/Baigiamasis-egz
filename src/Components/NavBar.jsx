@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { SiYourtraveldottv } from 'react-icons/si';
 import { FaArrowRight } from 'react-icons/fa6';
 
@@ -9,15 +10,16 @@ const NavBar = ({ onSignInClick }) => {
         <SiYourtraveldottv /> Travel
       </h1>
       <nav>
-        <a href="#">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">CONTACT</a>
+        <Link to="/">HOME</Link>
+        <Link to="/about">ABOUT</Link>
+        <Link to="/contact">CONTACT</Link>
+        <Link to="/get-start">GET START</Link>
       </nav>
       <div className="btn">
         <button onClick={onSignInClick}>Sign in</button>
-        <button>
+        <Link className='get' to="/get-start">
           Get start <FaArrowRight className="react-icons" />
-        </button>
+        </Link>
       </div>
     </div>
   )
