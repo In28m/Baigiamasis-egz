@@ -83,7 +83,7 @@ button:hover {
     background-color: #ffd452;
     color: black;  
 }
-/*mob. prisitaikymas*/
+/* mob. prisitaikymas */
 @media only screen and (max-width: 678px) {
     .navBar {
         padding: 10px;
@@ -106,4 +106,26 @@ button:hover {
         margin-top: 550px;
     }
 }
+
+/* plančetinių įrenginių prisitaikymas */
+@media only screen and (min-width: 679px) and (max-width: 1024px) {
+    .navBar {
+        padding: 15px;
+    }
+
+    .travelLogo {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    nav {
+        font-size: 18px;
+        margin-top: 30px;/
+    }
+
+    .btn {
+        margin-top: 450px;
+    }
+}
+
 
