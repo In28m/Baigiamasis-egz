@@ -1,4 +1,3 @@
-// NavBar.jsx
 import React from 'react';
 import { SiYourtraveldottv } from 'react-icons/si';
 import { FaArrowRight } from 'react-icons/fa6';

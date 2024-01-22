@@ -83,5 +83,27 @@ button:hover {
     background-color: #ffd452;
     color: black;  
 }
+/*mob. prisitaikymas*/
+@media only screen and (max-width: 678px) {
+    .navBar {
+        padding: 10px;
+    }
 
+    .travelLogo {
+        font-size: 25px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        font-size: 16px;
+        margin-top: 25px;
+    }
+
+    .btn {
+        margin-top: 550px;
+    }
+}
 

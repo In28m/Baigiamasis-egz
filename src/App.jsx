@@ -1,4 +1,3 @@
-// App.jsx
 import React, { useState } from 'react';
 import './main.scss';
 import './signIn.scss';
